@@ -1,0 +1,16 @@
+<!--<app-menu></app-menu>-->
+
+<p>teste alura pic</p>
+
+<po-page-default p-title="PO Page Default">
+  <!--
+      <app-photo srcImage="https://raw.githubusercontent.com/po-ui/po-angular/master/docs/assets/po-logos/po_color_bg.svg" descricao=""> </app-photo>
+    -->
+  <app-photo
+    *ngFor="let photo of photos"
+    [srcImage]="photo.url"
+    [descricao]="photo.description"
+    [tamanho]="300"
+  >
+  </app-photo>
+</po-page-default>
