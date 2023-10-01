@@ -1,1 +1,7 @@
-<p>photo-list works!</p>
+<app-photo
+  *ngFor="let photo of photos"
+  [srcImage]="photo.url"
+  [descricao]="photo.description"
+  [tamanho]="300"
+>
+</app-photo>
