@@ -20,6 +20,22 @@ export class MenuComponent {
       label: 'AluraPic',
       shortLabel: 'AluraPic',
       link: '/alurapic'
+    },
+    {
+      label: 'AluraPic - Flavio',
+      shortLabel: 'AluraPic - Flavio',
+      link: '/alurapic/user/flavio'
+    },
+    {
+      label: 'AluraPic - Almeida',
+      shortLabel: 'AluraPic - Almeida',
+      link: '/alurapic/user/almeida'
+    }
+    ,
+    {
+      label: 'AluraPic - Erro',
+      shortLabel: 'AluraPic - Erro',
+      link: '/alurapic/erro'
     }
   ]
 }

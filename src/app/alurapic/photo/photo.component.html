@@ -1,7 +1,23 @@
-<div class="po-md-4">
-  <po-image
-    [p-src]="srcImage"
-    [p-alt]="descricao"
-    [p-height]="tamanho">
-  </po-image>
+<div class="po-text-left">
+  <div class="po-font-title">Choosing a trip</div>
 </div>
+
+<div class="po-md-4">
+  <po-image [p-src]="srcImage" [p-alt]="descricao" [p-height]="tamanho">
+  </po-image>
+
+  <po-button p-icon="po-icon po-icon-like" [p-label]="likesLabel" p-kind="tertiary"></po-button>
+
+  <!--
+    <po-number
+    class="po-md-12"
+    formControlName="likes"
+    [p-value]="likes"
+    p-clean="false"
+    p-icon="po-icon po-icon-like"
+    p-label="likes"
+    p-readonly="true"
+    name="input"
+    >
+  </po-number>
+--></div>

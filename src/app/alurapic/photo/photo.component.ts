@@ -14,5 +14,9 @@ export class PhotoComponent {
 
   @Input() srcImage = '';
   @Input() descricao = '';
-  @Input() tamanho = 300;
+  @Input() tamanho = 400;
+  @Input() likes = 0;
+
+  likesLabel = this.likes.toString();
+
 }

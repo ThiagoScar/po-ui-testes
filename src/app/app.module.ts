@@ -29,7 +29,8 @@ import { PoTemplatesModule } from '@po-ui/ng-templates';
     RouterModule.forRoot([]),
     PoModule,
     AluraPicModule,
-    PoTemplatesModule
+    PoTemplatesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

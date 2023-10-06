@@ -6,14 +6,16 @@ import { PhotoListComponent } from './alurapic/photo/photo-list/photo-list.compo
 import { PhotoFormComponent } from './alurapic/photo/photo-form/photo-form.component';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { PoPageBlockedUserComponent, PoPageBlockedUserReason } from '@po-ui/ng-templates';
+import { PhotoComponent } from './alurapic/photo/photo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'menu', pathMatch: 'full' },
 
   { path: 'home', component: HomeComponent },
   { path: 'alurapic', component: AlurapicComponent },
-  { path: 'user/flavio', component: PhotoListComponent },
-  { path: 'p/add', component: PhotoFormComponent },
+  //{ path: 'alurapic/user/flavio', component: PhotoComponent },
+  { path: 'alurapic/user/:userName', component: PhotoListComponent },
+  { path: 'alurapic/p/add', component: PhotoFormComponent },
   { path: '**', component: PoPageBlockedUserComponent, data: {
     contactEmail: 'dev.po@po-ui.com',
     contactPhone: '0800 1234 000',
