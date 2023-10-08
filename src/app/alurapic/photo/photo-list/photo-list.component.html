@@ -1,12 +1,1 @@
-<po-page-list>
-
-    <app-photo
-      *ngFor="let photo of photos"
-      [srcImage]="photo.url"
-      [descricao]="photo.description"
-      [tamanho]="300"
-      [likes]="photo.likes"
-    >
-    </app-photo>
-
-</po-page-list>
+<app-photos [photos]="photos"></app-photos>

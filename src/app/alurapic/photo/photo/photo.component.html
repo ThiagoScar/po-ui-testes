@@ -2,11 +2,23 @@
   <div class="po-font-title">Choosing a trip</div>
 </div>
 
-<div class="po-md-4">
-  <po-image [p-src]="srcImage" [p-alt]="descricao" [p-height]="tamanho">
-  </po-image>
+<po-image
+  class="po-image"
+  [p-src]="url"
+  [p-alt]="description"
+  [p-height]="300"
+>
+</po-image>
+<po-button
+  p-icon="po-icon po-icon-like"
+  [p-label]="likesLabel"
+  p-kind="tertiary"
+></po-button>
 
-  <po-button p-icon="po-icon po-icon-like" [p-label]="likesLabel" p-kind="tertiary"></po-button>
+  <!--
+    <po-image [p-src]="url" [p-alt]="descricao" [p-height]="tamanho">
+    </po-image>
+  -->
 
   <!--
     <po-number
@@ -20,4 +32,5 @@
     name="input"
     >
   </po-number>
---></div>
+-->
+

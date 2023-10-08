@@ -6,7 +6,7 @@ import { PhotoListComponent } from './alurapic/photo/photo-list/photo-list.compo
 import { PhotoFormComponent } from './alurapic/photo/photo-form/photo-form.component';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { PoPageBlockedUserComponent, PoPageBlockedUserReason } from '@po-ui/ng-templates';
-import { PhotoComponent } from './alurapic/photo/photo.component';
+import { PhotoComponent } from './alurapic/photo/photo/photo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'menu', pathMatch: 'full' },

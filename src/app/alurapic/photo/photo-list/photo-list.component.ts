@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Photo } from '../photo.interface';
-import { PhotoService } from '../photo.service';
+import { Photo } from '../photo/photo.interface';
+import { PhotoService } from '../photo/photo.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -32,9 +32,14 @@ export class PhotoListComponent implements OnInit {
 
     this.photoService
     .listFromUser(userName)
-    .subscribe(photos => this.photos = photos);
+    .subscribe({
+      next: (photosService: Photo[]) => (console.log("console sucesso fotos " + photosService), this.photos = photosService),
+      error: (error: any) => console.log("Falha ao carregar fotos")
+    });
+    //.subscribe(photos => this.photos = photos);
 
-    console.log(userName);
+    console.log("console username " + userName);
+    console.log("console total fotos " + this.photos.length)
   }
 
 }

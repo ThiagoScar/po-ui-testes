@@ -5,19 +5,21 @@ import { CommonModule } from '@angular/common';
 
 import { PoModule } from '@po-ui/ng-components';
 
-import { PhotoComponent } from './photo/photo.component';
+import { PhotoComponent } from './photo/photo/photo.component';
 import { MenuComponent } from '../menu/menu.component';
 import { AppComponent } from '../app.component';
 import { AlurapicComponent } from './alurapic.component';
 import { PhotoListComponent } from './photo/photo-list/photo-list.component';
 import { PhotoFormComponent } from './photo/photo-form/photo-form.component';
+import { PhotosComponent } from './photo/photo-list/photos/photos.component';
 
 @NgModule({
   declarations: [
     AlurapicComponent,
     PhotoComponent,
     PhotoListComponent,
-    PhotoFormComponent
+    PhotoFormComponent,
+    PhotosComponent
   ],
   exports: [
     PhotoComponent

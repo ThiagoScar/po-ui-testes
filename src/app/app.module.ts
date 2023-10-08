@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { AlurapicComponent } from './alurapic/alurapic.component';
-import { PhotoComponent } from './alurapic/photo/photo.component';
+import { PhotoComponent } from './alurapic/photo/photo/photo.component';
 import { AluraPicModule } from './alurapic/alurapic.module';
 import { PoTemplatesModule } from '@po-ui/ng-templates';
 
