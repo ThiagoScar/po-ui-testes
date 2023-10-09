@@ -11,18 +11,11 @@
 </ol>
 -->
 
-<po-page-list>
-  <div class="po-row">
-    <po-list-view [p-items]="photos">
-      <ng-template p-list-view-content-template let-rows>
-        <div class="po-xl-4 po-lg-4 po-md-4 po-sm-4">
-          <app-photo
-            [url]="rows.url"
-            [description]="rows.description">
-            ></app-photo
-          >
-        </div>
-      </ng-template>
-    </po-list-view>
-  </div>
-</po-page-list>
+
+<po-list-view class="po-lg-4" [p-items]="photos">
+  <ng-template p-list-view-content-template let-cols>
+    <div class="po-xl-4 po-lg-4 po-md-4 po-sm-4">
+      <app-photo [url]="cols.url" [description]="cols.description"> </app-photo>
+    </div>
+  </ng-template>
+</po-list-view>
